@@ -1,0 +1,176 @@
+body {
+    font-family: Arial;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: lightgrey;
+}
+
+.wrapper {
+    background: white;
+    position: relative;
+}
+
+.sort-by {
+    position: relative;
+    font-size: 20px;
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px 70px 0;
+}
+
+.sort-by span {
+    margin-right: 20px;
+}
+
+.page-title {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    background-color: whitesmoke;
+    padding: 50px 0;
+}
+
+.movie-list {
+    display: inline-block;
+}
+
+.movie {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.movie.hide {
+    display: none;
+}
+
+.movie-title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.movie-poster {
+    max-height: 600px;
+    float: left;
+    padding-right: 20px;
+}
+
+.movie-poster img {
+    width: 100%;
+}
+
+.movie-details,
+.movie-poster {
+    width: 48%;
+    display: inline-block;
+}
+
+.checked {
+    color: orange;
+}
+
+.options {
+    z-index: 5;
+}
+
+.options .show {
+    display: block;
+    top: 45px;
+}
+
+.options:hover {
+    cursor: pointer;
+}
+
+.options div{
+    display: none;
+}
+
+.options .sort {
+    padding: 10px 30px 10px 20px;
+    border: 1px solid grey;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    min-width: 145px;
+}
+
+i.fa-angle-down {
+    position: absolute;
+    right: 30px;
+    z-index: 10;
+}
+
+#star-rating {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: none;
+}
+
+.fa.star {
+    font-size: 30px;
+}
+
+.star:hover {
+    color: orange;
+}
+
+.star.hover {
+    color: orange;
+}
+
+.options div.active {
+    display: inline-block;
+}
+
+#star-rating.show {
+    display: inline-block;
+}
+
+.star.right {
+    margin-left: -9px;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.star.left {
+    margin-right: 0;
+}
+
+#genres {
+    display: none;
+}
+
+#genres.show {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100px;
+    width: 97%;
+    justify-content: space-around;
+}
+
+.genre-checkbox {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type=checkbox] {
+    margin: 4px 5px 0 10px;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    padding: 10px;
+}
+
